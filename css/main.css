@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+:root{
+--main: #F1F7F3;
+--secondary: #ABB8C3;
+--black: #090B07;
+--main-sel: #263C49;
+--sec-sel: #677A7E;
+}
+*{
+    padding: 0;
+    margin: 0;
+    color: var(--black);
+    font-family: "Shantell Sans", cursive;;
+}
+.text-sel{
+    color: var(--main-sel) !important;
+}
+.fon{
+    height: 30vh;
+    background-image: url(../src/photo_2025-07-31_21-40-39.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+a{
+  text-decoration: none;
+}
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  background: #333;
+  color: white;
+  padding: 12px 0;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+}
+
+.marquee-content {
+  display: flex;
+  animation: scroll 30s linear infinite;
+}
+
+.marquee-content span {
+  white-space: nowrap;
+  padding: 0 40px;
+  position: relative;
+  color: #F1F7F3;
+}
+
+.marquee-content:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+footer{
+  background: #333;
+  color: #fff;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+#main{
+  color:red;
+}
+#menu1{
+position: relative;
+display: block;
+width: 100%;
+height: auto;
+z-index: 10;
+}
+#menu1 ul{
+position: relative;
+display: block;
+margin: 0px;
+padding: 0px;
+width: 100%;
+height: auto;
+list-style: none;
+}
+#menu1 > ul::after{
+display: block;
+width: 100%;
+height: 0px;
+clear: both;
+content: " ";
+}
+#menu1 ul li{
+position: relative;
+display: block;
+ float: left;
+width: auto;
+height: auto;
+  background-color: #000;
+}
+#menu1 ul li a{
+display: block;
+padding: 9px 25px 0px 25px;
+font-size: 14px;
+line-height: 1.3em;
+text-decoration: none;
+font-weight: bold;
+text-transform: uppercase;
+height: 36px;
+box-sizing: border-box;
+color: white;
+}
